@@ -41,9 +41,16 @@ h1 {
 ul > li {
 padding-bottom: 5px;
   }
+p , h3 , h2 {
+    text-align: center;
+  }
   .tophalf {
-      text-align: center;
+    display: flex;
       list-style: inside;
+      justify-content: space-around;
+  }
+  .tophalf > img {
+    height: 300px;
   }
   .footer {
     background-color: black;
