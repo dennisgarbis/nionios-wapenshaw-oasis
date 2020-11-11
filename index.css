@@ -1,14 +1,20 @@
 * {
     box-sizing: border-box;
 }
+#wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: thin dashed black;
+}
 h1 {
     text-align: center;
     font-size: 85px;
     font-family: chiller;
-    background-image: url("nwo.png");
-    background-size: 43px;
-    background-repeat: no-repeat;
-    background-position: center;
+
+}
+span > img {
+width: 43px; 
 }
 .nav {
     display: flex;
@@ -49,8 +55,12 @@ p , h3 , h2 {
       list-style: inside;
       justify-content: space-around;
   }
+  img {
+    width: 300px;
+  }
   .tophalf > img {
     height: 300px;
+    width: 300px;
   }
   .footer {
     background-color: black;
@@ -65,14 +75,47 @@ p , h3 , h2 {
   .footer > a:visited {
       color: red;
   }
-  .footer > a:hover{
-      background-color: white;
-      color: black;
-  }
   .footer > p {
     color: white;
+    padding-right: 10px;
   }
   .copyright {
     text-align: right;
     font-size: 14px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #wrapper {
+      width: 100%;
+    }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > img {
+  padding: 10px;
+}
+
+.tophalf {
+  display: flex;
+  flex-direction: column;
+}
+.tophalf > img {
+  height: 150px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.nav > div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 5px;
+}
+.nav {
+  flex-direction: column;
+}
+
   }
