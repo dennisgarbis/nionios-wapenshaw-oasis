@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 #wrapper {
   width: 80%;
@@ -7,115 +7,149 @@
   margin-right: auto;
   border: thin dashed black;
 }
-h1 {
-    text-align: center;
-    font-size: 85px;
-    font-family: chiller;
-
+.head {
+  margin-top: 0;
 }
+h1 {
+  text-align: center;
+  font-size: 85px;
+  font-family: chiller;
+  height: 100%;
+}
+
 span > img {
-width: 43px; 
+  width: 43px;
 }
 .nav {
-    display: flex;
-    justify-content: center;
-  }
-  .nav > div {
-    background-color: black;
-    font-size: 20px;
-    width: 100%;
-    text-align: center;
-  }
-  .nav > div > a:link {
-    text-decoration: none;
-    font-size: 30px;
-  }
-  .nav > div > a:visited {
-    text-decoration: line-through;
-    background-color: white;
-    color: red;
-  }
-  .nav > div > a:hover {
-    background-color: white;
-    color: black;
-    text-decoration: none;
-  }
-  .nav > div > a:active {
-      text-decoration: line-through;
-      color: green;
-  }
-ul > li {
-padding-bottom: 5px;
-  }
-p , h3 , h2 {
-    text-align: center;
-  }
-  .tophalf {
-    display: flex;
-      list-style: inside;
-      justify-content: space-around;
-  }
-  img {
-    width: 300px;
-  }
-  .tophalf > img {
-    height: 300px;
-    width: 300px;
-  }
-  .footer {
-    background-color: black;
-    color: white;
-    font-size: 18px;
-  }
-  .footer > a {
-    padding: 20px;
-    color: white;
-    text-decoration: none;
-  }
-  .footer > a:visited {
-      color: red;
-  }
-  .footer > p {
-    color: white;
-    padding-right: 10px;
-  }
-  .copyright {
-    text-align: right;
-    font-size: 14px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    #wrapper {
-      width: 100%;
-    }
-main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  background-color: black;
 }
-main > img {
-  padding: 10px;
+.nav > a {
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
 }
-
-.tophalf {
+.nav > a:visited {
+  text-decoration: line-through;
+  background-color: white;
+  color: red;
+}
+.nav > a:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+.nav > a:active {
+  text-decoration: line-through;
+  color: green;
+}
+li {
+  padding-bottom: 5px;
+}
+li > a {
+  text-decoration: none;
+}
+li > a:visited {
+  color: darkolivegreen;
+}
+li > a:hover {
+  color: white;
+  background-color: black;
+}
+li > a:active {
+  color: red;
+}
+.pics {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.tophalf > img {
-  height: 150px;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-.nav > div {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
+.pics > img {
   margin: 5px;
 }
-.nav {
-  flex-direction: column;
+p, h3, h2 {
+  text-align: center;
+}
+.tophalf {
+  display: flex;
+  justify-content: space-evenly;
 }
 
+img {
+  width: 300px;
+}
+.tophalf > img {
+  height: 300px;
+  width: 300px;
+}
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+.footer > a {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+.footer > a:visited {
+  color: red;
+}
+.footer > p {
+  color: white;
+  padding-right: 10px;
+}
+.copyright {
+  text-align: right;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 850px) {
+#wrapper {
+  width: 90%;
+}
+h1 {
+  font-size: 60px;
+}
+
+
+}
+@media only screen and (max-width: 600px) {
+  #wrapper {
+    width: 100%;
   }
+  h1 {
+    font-size: 60px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main > img {
+    padding: 10px;
+  }
+
+  .tophalf {
+    display: flex;
+    flex-direction: column;
+  }
+  .tophalf > img {
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav > a {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 5px;
+  }
+  .nav {
+    flex-direction: column;
+    margin: 5px;
+  }
+}
