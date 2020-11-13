@@ -45,7 +45,11 @@ span > img {
   text-decoration: line-through;
   color: green;
 }
+.active {
+  background-color: white;
+}
 li {
+  list-style: lower-greek;
   padding-bottom: 5px;
 }
 li > a {
@@ -53,7 +57,7 @@ li > a {
   text-decoration: none;
 }
 li > a:visited {
-  color: darkolivegreen;
+  color: rgb(55, 58, 221);
 }
 li > a:hover {
   color: white;
