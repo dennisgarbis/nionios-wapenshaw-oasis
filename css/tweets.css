@@ -50,7 +50,7 @@ span > img {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-img {
+.pics > a > img {
   height: 350px;
   margin: 10px;
   border: 1px solid black;
