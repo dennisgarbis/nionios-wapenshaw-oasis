@@ -45,6 +45,9 @@ span > img {
   text-decoration: line-through;
   color: green;
 }
+.active {
+  background-color: white;
+}
 .pics {
     display: flex;
     justify-content: space-around;
